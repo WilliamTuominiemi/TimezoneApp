@@ -1,0 +1,22 @@
+<div class="time">
+
+    <h2>Time in Sweden &#127480;&#127466;</h2>
+
+    <script>
+        const offset='+1'
+
+        var d = new Date();
+
+        var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+
+        var nd = new Date(utc + (3600000*offset));
+                
+        const time = `${nd.getHours()}:${(nd.getMinutes()<10?'0':'') + nd.getMinutes()}`
+
+        const txt = time.toLocaleString()
+
+        document.write(txt.fontcolor("white").fontsize(10));
+    </script>
+
+    
+</div>
