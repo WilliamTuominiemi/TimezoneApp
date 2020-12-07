@@ -1,0 +1,24 @@
+<div class="time">
+
+    <h2>Time in UTC +1 </h2>
+    <p> Norway &#127475;&#127476;, Denmark &#127465;&#127472;, Sweden &#127480;&#127466;</p>
+
+
+    <script>
+        const offset='+1'
+
+        const d = new Date();
+
+        const utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+
+        const nd = new Date(utc + (3600000*offset));
+                
+        const time = `${nd.getHours()}:${(nd.getMinutes()<10?'0':'') + nd.getMinutes()}`
+
+        const txt = time.toLocaleString()
+
+        document.write(txt.fontcolor("white").fontsize(10));
+    </script>
+
+    
+</div>

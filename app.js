@@ -11,7 +11,7 @@ app.engine('handlebars', exphbs())
 app.set('view engine', 'handlebars')
  
 app.get('/', function (req, res) {
-    res.render('finland')
+    res.render('UTC2')
 });
 
 app.get('/finland', function (req, res) {
@@ -32,6 +32,18 @@ app.get('/iceland', function (req, res) {
 
 app.get('/denmark', function (req, res) {
     res.render('denmark')
+});
+
+app.get('/UTC0', function (req, res) {
+    res.render('UTC0')
+});
+
+app.get('/UTC1', function (req, res) {
+    res.render('UTC1')
+});
+
+app.get('/UTC2', function (req, res) {
+    res.render('UTC2')
 });
  
 app.listen(3000)

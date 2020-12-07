@@ -11,14 +11,14 @@
     <script type="text/javascript">
         function load()
         {
-            setTimeout("window.open(self.location, '_self');", 15000 );
+            setTimeout("window.open(self.location, '_self');", 30000 );
         }
     </script>
 </head>
 <body onload="load()">
     <h1> Nordic countries time </h1>
     <div class="dropdown">
-        <button class="dropbtn">Timezones <i class="fa fa-angle-down"></i></button>
+        <button class="dropbtn"> By country <i class="fa fa-angle-down"></i></button>
         <div class="dropdown-content">
             <a href="/finland">Finland</a>
             <a href="/sweden">Sweden</a>
@@ -26,6 +26,12 @@
             <a href="/iceland">Iceland</a>
             <a href="/denmark">Denmark</a>
         </div>
+    </div>
+
+    <div class="map">
+        <a href="/UTC0"><img src="images/utc0.png"></a>
+        <a href="/UTC1"><img src="images/utc1.png"></a>
+        <a href="/UTC2"><img src="images/utc2.png"></a>
     </div>
 
     {{{body}}}
